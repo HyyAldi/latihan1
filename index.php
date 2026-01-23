@@ -90,12 +90,12 @@
     // }
 
 
-    //DO.. WHILE
-    // $i = 0;
-    // do {
-    // print "hai ";
-    // $i++;
-    // } while ($i < 5);
+    DO.. WHILE
+    $i = 0;
+    do {
+    print "hai ";
+    $i++;
+    } while ($i < 5);
     
 
     ?>
