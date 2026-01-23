@@ -90,7 +90,7 @@
     // }
 
 
-    DO.. WHILE
+    // DO.. WHILE
     $i = 0;
     do {
     print "hai ";
