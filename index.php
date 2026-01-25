@@ -205,14 +205,11 @@
     $i = 0;
     do {
     print "Hello ";
+    print "hai ";
     $i++;
     } while ($i < 5);
     
-
     ?>
-
-
->>>>>>> Stashed changes
 </body>
 
 </html>
