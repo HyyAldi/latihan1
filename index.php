@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>latihan1</title>
+
+    <style>
+        #tableBG {
+            background-color: red;
+        }
+
+        #tableBG2 {
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -158,16 +168,25 @@
                 ?> -->
 
         <!-- ada cara lain dari yang di atas -->
+        <!-- penggunaan for dan if -->
+        <!-- <?php for ($i = 1; $i <= 5; $i++) : ?>
 
-        <?php for ($i = 1; $i <= 5; $i++) { ?>
-            <tr>
-                <?php for ($j = 1; $j <= 5; $j++) { ?>
+            <?php if ($i % 2 == 1) : ?>
+                <tr id="tableBG">
+                <?php else: ?>
+                <tr id="tableBG2">
+                <?php endif; ?>
+
+                <?php for ($j = 1; $j <= 10; $j++) { ?>
                     <td><?php echo "$i, $j" ?></td>
                 <?php } ?>
-            </tr>
-        <?php } ?>
+                </tr>
+        <?php endfor ?> -->
 
     </table>
+
+
+
 </body>
 
 </html>
