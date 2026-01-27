@@ -183,7 +183,54 @@
                 </tr>
         <?php endfor ?> -->
 
+
     </table>
+
+    <?php
+    // PENGKONDISIAN / PERCABANGAN [if,else,ternary,switch]
+
+    // $a = 100;
+
+    // if ($a < 100) {
+    //     echo "lebih kecil dari 100";
+    // } else if ($a == 100) {
+    //     echo "sama dengan 100";
+    // } 
+    // else {
+    //     echo "lebih besar dari 100";
+    // } 
+    ?>
+
+
+    <!-- testing -->
+    <!-- <table border="1" cellspacing="0" cellpadding="10">
+        <?php for ($a = 1; $a <= 5; $a++) : ?>
+            <tr>
+                <?php for ($b = 1; $b <= 5; $b++) { ?>
+                    <?php if ($a == $b) : ?>
+                        <td style="background-color: aqua;"><?php echo "$a,$b" ?></td>
+                    <?php elseif ($a > $b) : ?>
+                        <td style="background-color: red;"><?php echo "$a,$b" ?></td>
+                    <?php elseif ($a < $b) : ?>
+                        <td style="background-color: pink;"><?php echo "$a,$b" ?></td>
+                    <?php else : ?>
+                        <td><?php echo "$a,$b" ?></td>
+                    <?php endif ?>
+
+                <?php } ?>
+            </tr>
+        <?php endfor ?>
+    </table> -->
+
+
+    
+
+
+
+
+
+
+
 
 
 
