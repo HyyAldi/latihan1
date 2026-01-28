@@ -207,23 +207,31 @@
         <?php for ($a = 1; $a <= 5; $a++) : ?>
             <tr>
                 <?php for ($b = 1; $b <= 5; $b++) { ?>
-                    <?php if ($a == $b) : ?>
-                        <td style="background-color: aqua;"><?="$a,$b" ?></td>
-                    <?php elseif ($a > $b) : ?>
-                        <td style="background-color: red;"><?="$a,$b" ?></td>
-                    <?php elseif ($a < $b) : ?>
-                        <td style="background-color: pink;"><?="$a,$b" ?></td>
-                    <?php else : ?>
-                        <td><?="$a,$b" ?></td>
-                    <?php endif ?>
+                    <?=abc($a, $b) ?>
 
                 <?php } ?>
             </tr>
         <?php endfor ?>
     </table>
 
+    <?php
+    function abc($a, $b)
+    {
+        if ($a == $b) :
+            return "<td style='background-color: aqua;'>$a,$b</td>";
+        elseif ($a > $b) :
+            return "<td style='background-color: red;'>$a,$b</td>";
+        elseif ($a < $b) :
+            return "<td style='background-color: pink;'>$a,$b</td>";
+        else :
+            return "<td>$a,$b</td>";
+        endif;
+    }
 
-    
+    ?>
+
+
+
 
 
 

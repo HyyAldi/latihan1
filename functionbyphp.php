@@ -20,6 +20,6 @@
 <!-- <?php echo date("l", time()+60*60*24*5)?> -->
 
 <!-- mktim = membuat detik sendiri -->
- <?php echo mktime(0,0,0,7,29,2008) ?>
+<!-- <?php echo mktime(0,0,0,7,29,2008) ?> -->
 
 <!--  -->
