@@ -53,7 +53,7 @@
     <?php
     //PENGULANGAN Pada Array
     // for / 
-    $nilai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,13];
+    $nilai = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,13,14];
     ?>
 
     <!-- INI STATIC karna ketika $nilai1 di tambah maka dia tidak akan tampil
@@ -68,9 +68,11 @@
     <?php endfor ?> -->
 
     <!-- Ada yang lebih gampang menggunakan foreach -->
-    <?php foreach( $nilai as $a ) : ?>
+    <!-- <?php foreach( $nilai as $a ) : ?>
     <div> <?= $a; ?> </div>
-    <?php endforeach ?>
+    <?php endforeach ?> -->
+
+    
 
 
 </body>
