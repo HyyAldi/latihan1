@@ -57,9 +57,6 @@
     // $a = 11;
     // $b = "itu benar";
     // $c = "itu salah";
-
-
-
     // if ($a < 10) {
     //     echo $b;
     // } else {
@@ -74,29 +71,7 @@
 
 
     <?php
-    // <!-- PENGKONDISIAN / PERCABANGAN [if else, if else, ternary, switch] -->
-
-    // // penggabungan string
-    // $nama_depan = "aldi";
-    // $nama_belakang = " kurniawan";
-    // print $nama_depan . $nama_belakang;
-
-
-
-    // // assigment
-    // $x = 1;
-    // $x += 2;
-
-    // echo $x;
-
-    // $ndb = "aldi";
-    // $ndb .= " kurniawan";
-
-    // echo $ndb;
-
-
-
-    //perbandingan
+    
     // <, >, <=, >=, ==, !=
     // var_dump(5 == "5");
 
@@ -122,7 +97,7 @@
     ?>
 
     <?php
-    //PENGULANGAN [for,while,do.. while, foreach = pengulangan khusus array]
+    //PENGULANGAN [for,while,do.. while. foreach = pengulangan khusus array]
     //selagi nilai nya true maka lakukan terus program yang ada di dalam nya
 
 
