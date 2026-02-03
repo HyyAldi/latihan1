@@ -122,12 +122,13 @@
 
 
     <!-- daftar murid menggunakan Array Associative -->
-    <?php $murid = [
+    <!-- <?php $murid = [
         // ini murid pertama
         [
             "nama" => "Aldi",
             "absen" => "01",
-            "kelas" => "XI TKJ 1"
+            "kelas" => "XI TKJ 1",
+            "foto" => "Gaius Iulius Caesar 🗡️.jpeg"
         ],
         // harus ada koma 
         // ini murid kedua
@@ -135,21 +136,61 @@
             "nama" => "Lia",
             "absen" => "52",
             "kelas" => "XI IDK 1"
+
         ],
         //ini murid ketiga
         [
             "nama" => "Someone",
             "absen" => "25",
-            "kelas" => "XI IPA 1"
+            "kelas" => "XI IPA 1",
+            "foto" => "Marcus Aurelius.jpeg"
         ],
     ] ?>
-<?php foreach($murid as $mu) : ?>
-    <li>Nama : <?= $mu["nama"] ?></li>
-    <li>Absen : <?= $mu["absen"] ?></li>
-    <li>Kelas : <?= $mu["kelas"] ?></li>
-    <br>
-<?php endforeach?>
+    <?php foreach ($murid as $mu) : ?>
+        <li>
+            <img src="foto/<?= $mu["foto"]; ?>">
+        </li>
+        <li>Nama : <?= $mu["nama"] ?></li>
+        <li>Absen : <?= $mu["absen"] ?></li>
+        <li>Kelas : <?= $mu["kelas"] ?></li>
+        <br>
+    <?php endforeach ?> -->
 
+
+    <!-- PRAKTEK -->
+
+    <!-- <?php $perpustakaan = [
+        [
+            "judul" => "The Richest Man In Babylon",
+            "halaman" => "200",
+            "penulis" => "George S. Clason",
+            "penerbit" => "Gramedia"
+        ],
+        [
+            "judul" => "How To Win Friends & Influence People",
+            "halaman" => "271",
+            "penulis" => "Dale Carnegie",
+            "penerbit" => "Gramedia"
+        ],
+        [
+            "judul" => "Madilog",
+            "halaman" => "560",
+            "penulis" => "Tan Malaka",
+            "penerbit" => "Narasi"
+        ]
+    ] 
+    ?>
+
+    <?php foreach($perpustakaan as $buku) : ?>
+        <li>
+            <img src="" alt="<?= $buku["judul"] ?>">
+        </li>
+        <li>judul buku : <?= $buku["judul"] ?></li>
+        <li>jumlah halaman : <?= $buku["halaman"] ?></li>
+        <li>penulis : <?= $buku["penulis"] ?></li>
+        <li>penerbit : <?= $buku["penerbit"] ?></li>
+        <br>
+    <?php endforeach?> -->
 
 
 
