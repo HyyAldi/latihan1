@@ -1,14 +1,32 @@
+<?php
+    //cek apakah tidak ada data di $_GET
+    if (!isset($_GET["judul"]) ||
+    !isset($_GET["halaman"]) || 
+    !isset($_GET["penulis"]) || 
+    !isset($_GET["penerbit"]) ){
+        //redirect memindahkan user dari halaman ke halaman lain
+        header("Location: get&post.php");
+        exit;
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>ul{
+    <style>
+        ul {
             list-style: none;
-     }</style>
+        }
+    </style>
 </head>
+
 <body>
+    
     <ul>
         <li><img src="" alt="<?= $_GET["judul"]; ?>"></li>
         <li>judul : <?= $_GET["judul"] ?></li>
@@ -18,4 +36,5 @@
     </ul>
     <h4><a href="get&post.php">kembali ke halaman utama</a></h4>
 </body>
+
 </html>
